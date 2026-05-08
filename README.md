@@ -37,7 +37,7 @@ An application layer (middleware) I designed that allows devices to automaticall
 * 📦 **[ot_app](https://github.com/HareoPL/ot_app)** — The main framework and core of the ecosystem. It contains universal system logic and an abstraction layer managing network events, independent of any specific microcontroller.
 * 🟢 **[ot_app_esp](https://github.com/HareoPL/ot_app_esp)** — A port of the OTApp ecosystem implemented for the ESP32 microcontroller family (including ESP32-C6).
 * 🔵 **[ot_app_stm](https://github.com/HareoPL/ot_app_stm)** — A port of the OTApp ecosystem optimized for the STM32 platform (e.g., STM32WBA65RI utilizing hardware GPDMA).
-* 🖥️ **[ot_app_cp](https://github.com/HareoPL/ot_app_cp)** — Control Panel (HMI). A repository containing the code for an advanced graphical user interface designed in TouchGFX. It utilizes DMA2D hardware acceleration on a powerful STM32H7 microcontroller.
+* 🖥️ **[ot_app_cp](https://github.com/HareoPL/ot_app_cp/tree/otapp_cp)** — Control Panel (HMI). A repository containing the code for an advanced graphical user interface designed in TouchGFX. It utilizes DMA2D hardware acceleration on a powerful STM32H7 microcontroller.
 * 🛜 **[ot_app_br](https://github.com/HareoPL/ot_app_br)** — Border Router implementation, serving as an access gateway connecting the OpenThread Mesh network with an external Wi-Fi/IP network.
 
 *I am currently expanding this ecosystem with an MQTT gateway connected to an LTE modem, which will collect data from the sensor network and send it to the cloud for analysis.*
