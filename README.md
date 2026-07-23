@@ -2,9 +2,9 @@
 
 ### Hardware Whisperer (Embedded Engineer / Diagnostics Expert / Creator) 🇵🇱 Ząbki, Poland
 
-I am a embedded engineer combining modern software development with a hardcore background in component-level electronics diagnostics (BGA/SMD). Because of this, I perfectly understand how hardware works under the hood. I don't just write code; I read schematics, hook up logic analyzers, and seamlessly transfer low-level hardware behavior into the software abstraction layer.
+I am an embedded engineer combining modern software development with a hardcore background in component-level electronics diagnostics (BGA/SMD). Because of this, I perfectly understand how hardware works under the hood. I don't just write code; I read schematics, hook up logic analyzers, and seamlessly transfer low-level hardware behavior into the software abstraction layer.
 
-I handle the entire project lifecycle: from designing custom PCBs, through writing efficient bare-metal/RTOS firmware, to designing beautiful graphical user interfaces in TouchGFX.
+I handle the entire project lifecycle: from designing custom PCBs, through writing efficient, strictly tested bare-metal/RTOS firmware, to designing beautiful graphical user interfaces in TouchGFX.
 
 ---
 
@@ -26,7 +26,7 @@ I handle the entire project lifecycle: from designing custom PCBs, through writi
 ### 🛠️ Tech Stack & Tools
 
 **Core Languages & OS:**
-![C](https://img.shields.io/badge/Embedded_C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![C](https://img.shields.io/badge/Embedded_C_(OOP)-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-20232A?style=for-the-badge&logo=freertos&logoColor=white)
 
 **Microcontrollers & Architectures:**
@@ -39,6 +39,11 @@ I handle the entire project lifecycle: from designing custom PCBs, through writi
 ![CAN Bus](https://img.shields.io/badge/CAN_Bus-005571?style=for-the-badge)
 ![CoAP](https://img.shields.io/badge/CoAP-25A162?style=for-the-badge)
 ![Modbus](https://img.shields.io/badge/Modbus_RTU-007ACC?style=for-the-badge)
+
+**Code Quality & Testing:**
+![Unity](https://img.shields.io/badge/Unity_(Unit_Tests)-000000?style=for-the-badge)
+![FFF](https://img.shields.io/badge/FFF_(Mocking)-4B8B3B?style=for-the-badge)
+![MISRA C](https://img.shields.io/badge/MISRA_C-03234B?style=for-the-badge)
 
 **Tools & Workflows:**
 ![STM32CubeIDE](https://img.shields.io/badge/STM32CubeIDE-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white)
@@ -57,6 +62,7 @@ Most of my public repositories make up my comprehensive IoT ecosystem based on t
 An application layer (middleware) I designed that allows devices to automatically discover each other, pair, and communicate asynchronously.
 
 * 📦 **[ot_app](https://github.com/HareoPL/ot_app/tree/feature/ot_app/mqtt-gsm-gateway)** — The main framework and core of the ecosystem. It contains universal system logic and an abstraction layer managing network events and messaging (utilizing `ot_app_msg_tlv` for serialization), making it entirely independent of any specific microcontroller.
+* 🧪 **Quality Assurance:** The core logic is rigorously tested utilizing **Test-Driven Development (TDD)** principles, with extensive unit tests powered by **Unity** and hardware mocking via **FFF** (Fake Function Framework).
 * 🟢 **[ot_app_esp](https://github.com/HareoPL/ot_app_esp)** — A port of the OTApp ecosystem implemented for the ESP32 microcontroller family (including ESP32-C6).
 * 🔵 **[ot_app_stm](https://github.com/HareoPL/ot_app_stm)** — A port of the OTApp ecosystem optimized for the STM32 platform (e.g., STM32WBA65RI utilizing hardware GPDMA).
 * 🖥️ **[ot_app_cp](https://github.com/HareoPL/ot_app_cp/tree/otapp_cp)** — Control Panel (HMI). Advanced graphical user interface designed in TouchGFX, utilizing DMA2D hardware acceleration on a powerful STM32H7 microcontroller.
